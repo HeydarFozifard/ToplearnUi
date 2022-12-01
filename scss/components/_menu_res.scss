@@ -1,0 +1,49 @@
+// style for main mene
+.main-list-menu {
+
+    ul li {
+        display: block;
+        direction: rtl;
+        margin-right: 10px;
+        line-height: 1.7;
+
+        a {
+            color: $color-for-font-article;
+
+            &:hover {
+                color: $color-for-hover;
+                transition: color .2s ease-in .1s;
+            }
+
+            i {
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+// stlye for bottom menu
+.navigaition_responsive {
+   
+    // cod for responsive
+    li {
+        display: block;
+        line-height: 1.5;
+
+        a {
+            color: $color-for-font-article;
+            position: relative;
+            &:hover {
+                color: $color-for-hover;
+                transition: color .2s ease-in .1s;
+            }
+
+        }
+
+        .list {
+            margin-right: 5px;
+        }
+
+    }
+
+}

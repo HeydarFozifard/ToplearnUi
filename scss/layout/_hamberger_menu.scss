@@ -1,0 +1,45 @@
+.navbar__responsive {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30vmax;
+
+    h3 {
+        color: $color-for-hover;
+        margin: 10px 0;
+    }
+}
+
+.navbar-navigation {
+    @include responsive ("phone") {
+
+        width: 75vmax;
+    }
+    @include responsive ("phone") {
+
+        width: 60vmax;
+    }
+
+    width: 50vmax;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: -700px;
+
+}
+
+.navbar-navigation-right {
+    @include responsive ("phone") {
+        padding: 15px 20px;
+
+    }
+
+    padding: 45px;
+    width: 100%;
+}
+
+// style for logo
+.logo_navbar__responsive {
+    margin: 0px 25px 0 0;
+}

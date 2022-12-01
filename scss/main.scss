@@ -1,0 +1,33 @@
+@import "abstracts/mixins", "abstracts/variables", "abstracts/placeholders";
+
+@import "base/fonts", "base/rest";
+
+
+@import "components/under-lind";
+@import "components/btn_hamberger";
+@import "components/menu_res";
+@import "components/search_responsive";
+@import "components/main-searchbox";
+@import "components/header_img_box";
+@import "components/viwe_more";
+@import "components/course-card";
+@import "components/card_articles";
+@import "components/logo_footer";
+@import "components/form_footer";
+@import "components/footer-menu";
+@import "components/social_footer";
+
+
+
+
+
+
+
+
+
+@import "layout/header", "layout/top-menu", "layout/main-menu", "layout/drop-menu", "layout/Services",
+"layout/courses", "layout/articles", "layout/footer","layout/hamberger_menu";
+
+
+
+

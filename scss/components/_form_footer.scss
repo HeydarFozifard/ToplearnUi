@@ -1,0 +1,74 @@
+// style for form footer
+.container-form-footer {
+    @include responsive ("small_desktop") {
+        flex-basis: 100%;
+        text-align: center;
+
+    }
+    @include responsive ("land-phone") {
+        display: none;
+
+
+    }
+
+    flex-basis: 70%;
+
+    border: dashed 2px $color-for-font-article;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 33px;
+    position: relative;
+    top: -50px;
+
+    .form-footer {
+        margin-right: 15px;
+        position: relative;
+
+        i {
+            position: absolute;
+            color: $color-icon-course;
+            top: 14px;
+            margin-right: 5px;
+
+        }
+
+
+        input[type="text"] {
+            padding: 20px 50px;
+            height: 40px;
+            margin-right: -5px;
+
+           
+        }
+
+        input[type="email"] {
+            height: 40px;
+            padding: 20px 50px;
+
+            margin-right: -5px;
+
+           
+
+        }
+
+        button[type="submit"] {
+           
+
+            height: 40px;
+            padding: 0px 40px;
+
+            background-color: $color-prise;
+            color: $color-top-list-item;
+            position: relative;
+            top: -2px;
+            margin-right: -5px;
+
+            &:hover {
+                background-color: #4e8d2c;
+                transition: all .4s ease;
+            }
+        }
+    }
+
+
+}

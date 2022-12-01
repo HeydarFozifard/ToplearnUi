@@ -1,0 +1,100 @@
+.box-article {
+           
+    box-shadow: 0 0 7px 0 #eaeff4;
+    background-color: $color-wiht;
+    margin-bottom: 30px;
+
+
+    .box-article-img {
+        width: 100%;
+        position: relative;
+
+        // ovelay card
+        &:hover>a .overlay {
+            opacity: 1;
+            transition: opacity .4s linear;
+        }
+
+        a .overlay {
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            z-index: 4;
+            background-color: $color-bg-article;
+        }
+
+        span {
+            position: absolute;
+            padding: 5px 20px;
+            z-index: 5;
+            top: 100px;
+            right: 85px;
+           
+            color: $color-wiht;
+            border: 1px solid $color-wiht;
+        }
+
+        img {
+            width: 100%;
+
+        }
+    }
+
+    // *sytle for des
+    .des-article {
+        .heading-article {
+            font-size: .8rem;
+            font-weight: 300;
+            color: $color-balck;
+            padding: 10px;
+            line-height: 1.3;
+
+            &:hover {
+                color: $color-for-hover;
+                transition: color .3s ease-in;
+            }
+        }
+
+        .about-article {
+            font-size: .8rem;
+            font-weight: 300;
+            color: $color-for-font-article;
+            padding: 8px;
+            line-height: 2;
+        }
+    }
+
+    // *sytle for info
+    .info-article {
+        @include flex-center;
+        justify-content: space-between;
+        padding:  10px;
+
+        .letter-article {
+        @include flex-center;
+        color: $color-for-font-article;
+           i{
+              margin-right: 15px;
+           }
+           p{
+               margin-right: 10px;
+           }
+        }
+        .teacher-article{
+            a{
+                color: $color-for-hover;
+                &:hover{
+                    color: $color-prise;
+                    transition: color .4s ease-in .1s;
+                }
+            }
+        }
+
+
+    }
+
+
+}

@@ -1,0 +1,37 @@
+// footer mene
+.bottom-menu {
+    @include responsive ("small_desktop") {
+        flex-basis: 100%;
+        order: 1;
+        text-align: center;
+        line-height: 1.6;
+    }
+    flex-basis: 90%;
+    ul {
+
+        li {
+            display: inline;
+            margin-right: 8px;
+
+            &.befor-icon::before {
+                content: "\f0c8;";
+                font-family: FontAwesome;
+                display: inline;
+                color: #3698ff;
+                font-size: 6px;
+                margin-left: 3px;
+            }
+
+        }
+
+        a {
+            color: $color-top-list-item;
+
+            &:hover {
+                color: $color-for-hover;
+                transition: all .3s ease-in;
+            }
+        }
+
+    }
+}

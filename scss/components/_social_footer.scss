@@ -1,0 +1,25 @@
+// social footer
+.social-media {
+    @include responsive ("small_desktop") {
+        flex-basis: 100%;
+        order: 2;
+        text-align: center;
+    }
+    flex-basis: 10%;
+    i {
+        color: $color-top-list-item;
+        background-color: #23425a;
+        padding: 7px;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: #3a6383;
+            transition: all .3s ease-in;
+        }
+
+        &:last-child {
+            margin-right: 10px;
+        }
+
+    }
+}

@@ -1,0 +1,35 @@
+.container-articles {
+    width: 100%;
+    background-image: url(../images/article-pattern.png);
+    background-repeat: repeat;
+    position: relative;
+
+    .left-parallax {
+        background: url(../images/left-parallax.svg) no-repeat center left;
+        @extend %for-parallax;
+        left: 0px;
+    }
+
+    .right-parallax {
+        background: url(../images/right-parallax.svg) no-repeat center right;
+        right: 0px;
+        @extend %for-parallax;
+
+    }
+
+    // ?style for articles
+    .row-articles {
+        padding: 50px 30px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        @include flex-center;
+        flex-direction: row-reverse;
+        position: relative;
+        z-index: 2;
+       
+
+    }
+
+
+
+}

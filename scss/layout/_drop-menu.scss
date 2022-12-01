@@ -1,0 +1,53 @@
+.drop-down {
+    position: absolute;
+    background-color: $color-wiht;
+    text-align: right;
+    top: 35px;
+    right: 0px;
+    box-shadow: 0 0 10px $color-box-shadow-topmenu;
+    width: 200px;
+    padding: 15px 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    transition: visibility .1s linear;
+    visibility: hidden;
+    z-index: 10;
+    li {
+        &.after-icon::after {
+            @include list-stlye;
+        }
+
+        &.befor-icon::before {
+            @include list-stlye;
+        }
+
+
+
+        a {
+            line-height: 1.5;
+            margin-right: 10px;
+
+            a:hover {
+                color: $color-for-hover;
+                transition: color .6s ease .1s;
+
+            }
+        }
+    }
+
+
+}
+
+
+
+
+.link-drop-down:hover>.drop-down {
+    visibility: visible;
+}
+
+.link-drop-down {
+    position: relative;
+
+}

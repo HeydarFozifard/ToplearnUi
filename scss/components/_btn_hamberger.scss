@@ -1,0 +1,28 @@
+.menu {
+    @include responsive ("small_desktop") {
+        display: block;
+    }
+
+    @include responsive ("small-phone") {
+        right: 193px;
+        top: 40px;
+
+    }
+
+    display: none;
+    position: absolute;
+    right: 240px;
+    top: 43px;
+    z-index: 58;
+
+    i {
+        font-size: 30px;
+        color: $color-wiht;
+        cursor: pointer;
+    }
+}
+
+.checkbox:checked~.navbar-navigation {
+    right: 0;
+    transition: all .8s ease;
+}

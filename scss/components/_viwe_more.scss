@@ -1,0 +1,50 @@
+// the style for viwe-more
+.container-view-more {
+    @include responsive ("small-phone") {
+        padding: 70px 40px 0 0px;
+
+
+    }
+
+    padding: 70px 40px 0 40px;
+    @include flex-center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    .title-view-more {
+        a {
+            @include responsive ("small-phone") {
+                font-size: .7rem;
+            }
+            font-weight: 100;
+            color: $color-balck;
+
+            &:hover {
+                color: $color-for-hover;
+                transition: color .2s ease-in;
+            }
+        }
+
+        i {
+            @include responsive ("small-phone") {
+            margin-right: 0px;
+            margin-bottom: 5px;
+
+            }
+            margin-right: 10px;
+            color: $color-for-hover;
+        }
+    }
+
+    .title-last-course {
+        @include responsive ("small-phone") {
+            font-size: .7rem;
+        }
+        @include flex-center;
+       margin-right: -40px;
+     
+    }
+
+
+
+}

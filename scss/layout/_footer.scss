@@ -1,0 +1,52 @@
+.footer {
+
+    .container-footer {
+        background: url(../images/footer-pattern.png) repeat;
+        padding: 47px 47px;
+        background-color: $color-footer-bg;
+
+        //    sytle for img
+        .logo--img_form {
+            @include flex-center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            @include responsive ("small_desktop") {
+                justify-content: center;
+
+            }
+
+
+        }
+
+        //     //? social-media style
+        .container-bottom-menu {
+            @include flex-center;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            position: relative;
+            flex-wrap: wrap;
+            left: 10px;
+            top: 30px;
+
+
+        }
+
+
+
+    }
+
+    // ?style for coprighting
+
+    .container-copy {
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+
+        p {
+            font-size: .9rem;
+        }
+    }
+
+}

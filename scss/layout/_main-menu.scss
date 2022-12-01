@@ -1,0 +1,53 @@
+.main-menu{
+    .container-menu{
+        @include responsive ("small_desktop") {
+            display: none;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+
+        padding: 20px 5px ;
+        box-shadow: 0 0 10px $color-box-shadow-topmenu;
+
+        .vip-logo{
+            display: flex;
+            align-items: center;
+        flex-direction: row-reverse;
+            
+
+            width:15%;
+            margin:0 60px 0 20px;
+            a{
+                color: $color-for-hover;
+            }
+            .img-vip{
+              width: 25%;
+              img{
+                  width: 100%;
+              }
+          }
+        }
+        .main-list-menu{
+
+            width: 85%;
+            ul li {
+                display: inline-block;
+                direction: rtl;
+                margin-right: 10px;
+               
+              a{
+                color: $color-placeholder; 
+                &:hover{
+                    color: $color-for-hover;
+                    transition: color .2s ease-in .1s;
+                }
+                i{
+                    margin-right: 4px;
+                }
+              }
+            }
+        }
+    }
+}
